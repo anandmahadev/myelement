@@ -10,6 +10,11 @@
 > Frontend, Backend, and ML must not deviate from these contracts.  
 > If a change is needed, update this file first, then implement.
 
+## Implementation Notes
+- Frontend should read runtime secrets from environment variables (for example `VITE_STITCH_API_KEY`).
+- Never commit real API keys; commit templates only (for example `.env.example`).
+- Backend and frontend pull requests that alter payloads must reference this spec update.
+
 ---
 
 ## Table of Contents
